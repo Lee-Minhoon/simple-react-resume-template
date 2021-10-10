@@ -1,0 +1,56 @@
+@mixin location($top, $right, $bottom, $left) {
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+@mixin size($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin font($color, $style, $weight, $size) {
+    color: $color;
+    font: {
+        display: swap;
+        family: 'Roboto', 'Noto Sans KR', sans-serif;
+        style: $style;
+        weight: $weight;
+        size: $size;
+    }
+}
+
+@mixin flex-center() {
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin if-mobile() {
+    @media all and (max-width: 1023px) {
+        @content;
+    }
+}
+
+@mixin media-size($mobile, $desktop) {
+    @media all and (max-width: 1023px) {
+        width: $mobile;
+    }
+    width: $desktop;
+}
+
+@mixin media-content-align() {
+    display: flex;
+    flex-flow: wrap;
+    @media all and (max-width: 1023px) {
+        justify-content: center;
+    }
+    justify-content: initial;
+}
+
+@mixin media-text-align() {
+    @media all and (max-width: 1023px) {
+        text-align: center;
+    }
+    text-align: initial;
+}
