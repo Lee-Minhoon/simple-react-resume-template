@@ -77,7 +77,10 @@ export const projects = {
             keywords: ["React", "HTML", "CSS", "JavaScript"],
             folder: "./simple-react-resume-template",
             images: ["1.png"],
-            pdfs: []
+            pdfs: [
+                { pdf: "1.pdf", thumbnail: "1-thumbnail.png" },
+                { pdf: "1.pdf", thumbnail: "2-thumbnail.png" },
+            ]
         },
         {
             title: "",
