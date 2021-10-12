@@ -22,6 +22,7 @@
 }
 
 @mixin flex-center() {
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -32,24 +33,31 @@
     }
 }
 
-@mixin media-size($mobile, $desktop) {
-    @media all and (max-width: 1023px) {
+@mixin media-width($mobile, $desktop) {
+    @include if-mobile() {
         width: $mobile;
     }
     width: $desktop;
 }
 
+@mixin media-size($mobile, $desktop, $ratio) {
+    @include if-mobile() {
+        @include size($mobile, calc(#{$mobile} / #{$ratio}));
+    }
+    @include size($desktop, calc(#{$desktop} / #{$ratio}));
+}
+
 @mixin media-content-align() {
     display: flex;
     flex-flow: wrap;
-    @media all and (max-width: 1023px) {
+    @include if-mobile() {
         justify-content: center;
     }
     justify-content: initial;
 }
 
 @mixin media-text-align() {
-    @media all and (max-width: 1023px) {
+    @include if-mobile() {
         text-align: center;
     }
     text-align: initial;

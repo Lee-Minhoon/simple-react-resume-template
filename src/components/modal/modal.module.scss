@@ -1,5 +1,7 @@
 @import '../../mixin.module.scss';
 
+$ratio: 1.2;
+
 @mixin event($x, $y) {
     &:hover {
         color: #FFC745;
@@ -8,38 +10,31 @@
     }
 }
 
-.Modal {
-    display: flex;
-    position: fixed;
+svg {
+    position: absolute;
     z-index: 99;
-    @include location(0, 0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.5);
-    @include flex-center();
-    text-align: center;
-    color: white;
     fill: none;
     stroke: currentColor;
     stroke-linecap: round;
     stroke-linejoin: round;
+}
+
+.Modal {
+    position: fixed;
+    @include flex-center();
+    @include location(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
     section {
-        @include if-mobile() {
-            @include size(90vw, calc(90vw / 1.618));
-        }
-        @include size(75vw, calc(75vw / 1.618));
+        @include media-size(90vw, 75vw, 1.618);
         background-color: #333;
         header {
-            display: flex;
             position: relative;
-            height: 7%;
             @include flex-center();
+            height: 7%;
             svg {
-                position: absolute;
-                z-index: 99;
                 @include location(0.5vw, 0.5vw, none, none);
-                @include if-mobile() {
-                    width: 3.125vw;
-                }
-                width: 2.604vw;
+                @include media-width(calc(2.6vw * #{$ratio}), 2.6vw);
                 transition: 0.3s;
                 @include event(0%, 0%);
             }
@@ -47,13 +42,10 @@
         .viewer {
             position: relative;
             height: 83%;
+            text-align: center;
             svg {
-                position: absolute;
                 top: 50%;
-                @include if-mobile() {
-                    width: 4.375vw;
-                }
-                width: 3.645vw;
+                @include media-width(calc(3.6vw * #{$ratio}), 3.6vw);
                 transform: translate(0%, -50%);
                 transition: 0.3s;
                 @include event(0%, -50%);
@@ -64,14 +56,10 @@
             }
         }
         footer {
-            display: flex;
-            height: 10%;
             @include flex-center();
+            height: 10%;
             img {
-                @include if-mobile() {
-                    @include size(7.2vw, calc(7.2vw / 1.5));
-                }
-                @include size(6vw, calc(6vw / 1.5));
+                @include media-size(calc(6vw * #{$ratio}), 6vw, 1.5);
                 margin: 0 0.25vw 0 0.25vw;
                 transition: 0.3s;
                 &:hover {

@@ -16,8 +16,8 @@
     }
     justify-content: flex-end;
     a {
-        display: inline-block;
         position: relative;
+        display: inline-block;
         @include size(5.5rem, 5.5rem);
         margin-left: 1rem;
         text-align: center;

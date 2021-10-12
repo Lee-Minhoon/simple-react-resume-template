@@ -1,10 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 @import './mixin.module.scss';
 
-
 .Resume {
-    @include media-size(90%, 1200px);
+    @include media-width(90%, 1200px);
     margin: 0px auto;
     padding: 60px 0 20px 0;
     line-height: 2;
@@ -21,7 +18,7 @@
             }
             margin-bottom: 2rem;
             .Left {
-                @include media-size(100%, 30%);
+                @include media-width(100%, 30%);
                 @include media-text-align;
                 @include if-mobile {
                     padding-right: 0;
@@ -29,7 +26,7 @@
                 padding-right: 5%;
             }
             .Right {
-                @include media-size(100%, 70%);
+                @include media-width(100%, 70%);
                 .desc {
                     @include if-mobile {
                         margin-top: 1rem;
@@ -56,10 +53,10 @@
                     @include media-content-align;
                     span {
                         display: inline-block;
+                        background-color: rgb(239, 239, 239);
                         @include if-mobile {
                             margin: 0.5rem;
                         }
-                        background-color: rgb(239, 239, 239);
                         margin: 0.5rem 1rem 0.5rem 0;
                         padding: 1px 6px;
                         line-height: normal;
