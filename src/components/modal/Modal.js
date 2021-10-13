@@ -18,9 +18,9 @@ class Modal extends Component {
     render() {
         const thumbnails = this.props.images.map((image, index) => {
             if (this.state.index === index) {
-                return <img className={modal.current} onClick={() => this.imageChange(index)} src={`projects/${this.props.folder}/${image}`} alt="alt_thumbnail"></img>
+                return <img className={modal.current} onClick={() => this.imageChange(index)} src={`${process.env.PUBLIC_URL}/projects/${this.props.folder}/${image}`} alt="alt_thumbnail"></img>
             }
-            return <img onClick={() => this.imageChange(index)} src={`projects/${this.props.folder}/${image}`} alt="alt_thumbnail"></img>
+            return <img onClick={() => this.imageChange(index)} src={`${process.env.PUBLIC_URL}/projects/${this.props.folder}/${image}`} alt="alt_thumbnail"></img>
         });
         const currentImage = this.props.images[this.state.index];
         const length = this.props.images.length;
@@ -38,7 +38,7 @@ class Modal extends Component {
                         <svg style={{ left: "1%" }} viewBox="0 0 12 18" onClick={() => this.imageChange((this.state.index + length - 1) % length)}>
                             <polyline points="9 3 3 9 9 15"></polyline>
                         </svg>
-                        <img src={`projects/${this.props.folder}/${currentImage}`} alt="alt_current"></img>
+                        <img src={`${process.env.PUBLIC_URL}/projects/${this.props.folder}/${currentImage}`} alt="alt_current"></img>
                         <svg style={{ right: "1%" }} viewBox="0 0 12 18" onClick={() => this.imageChange((this.state.index + 1) % length)}>
                             <polyline points="3 3 9 9 3 15"></polyline>
                         </svg>

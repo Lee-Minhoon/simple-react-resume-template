@@ -33,12 +33,14 @@ class Right extends Component {
             return <li key={index}>{desc.main}</li>
         })
         const keywords = content.keywords.map((keyword, index) => <span key={index}>{keyword}</span>)
-        const images = content.images.map((image, index) => <img key={index} onClick={() => this.controlModal(index)} src={`projects/${content.folder}/${image}`} alt="alt_image" />)
-        const pdfs = content.pdfs.map((pdf, index) =>
-            <Link key={index} to={`/pdfviewer/${content.folder}/${pdf.pdf}`} target="_blank">
-                <img src={`projects/${content.folder}/${pdf.thumbnail}`} alt="alt_pdf" />
-            </Link >
-        )
+        const images = content.images.map((image, index) => <img key={index} onClick={() => this.controlModal(index)} src={`${process.env.PUBLIC_URL}/projects/${content.folder}/${image}`} alt="alt_image" />)
+        const pdfs = content.pdfs.map((pdf, index) => {
+            const thumbnail = <img src={`${process.env.PUBLIC_URL}/projects/${content.folder}/${pdf.thumbnail}`} alt="alt_pdf" />
+            if (window.location.hostname === "localhost") {
+                return <Link key={index} to={`pdfviewer/${content.folder}/${pdf.pdf}`} target="_blank">{thumbnail}</Link>
+            }
+            return <Link key={index} to={`*/pdfviewer/${content.folder}/${pdf.pdf}`} target="_blank">{thumbnail}</Link>
+        })
 
         return (
             <div className={styles.Right}>
