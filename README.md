@@ -4,6 +4,8 @@
 
 필요한 기능들을 모두 갖고 있는 템플릿을 찾기 힘들어, 다른 선배님들의 멋진 템플릿을 참고하여 직접 제작하였습니다.
 
+리액트를 통해 제작되었기 때문에, Node.js의 설치를 필수로 합니다.
+
 https://lee-minhoon.github.io/
 
 <hr/>
@@ -63,6 +65,8 @@ npm run deploy
 자신의 저장소에 gh-pages 라는 브랜치가 자동으로 생성되며 페이지에서 보여줄 브랜치가 gh-pages로 설정됩니다.
 
 <img src="https://user-images.githubusercontent.com/59780565/137336885-7957e16f-4c46-4170-b080-cd865b1aef70.png" />
+
+React 프로젝트를 Github Page 에 배포하거나 gh-pages에 대해 궁금하신 분들은 https://hackids.tistory.com/126 를 확인해주시면 됩니다.
 
 로컬에서 테스트를 원하실 경우
 
