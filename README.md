@@ -35,9 +35,9 @@ git pull origin main
 
 ### 2. npm 설치 및 package.json 파일 수정
 
-'''
+```
 npm install
-'''
+```
 
 명령어를 통해 필요한 모듈들을 설치합니다.
 
