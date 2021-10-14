@@ -33,5 +33,26 @@ git remote add origin ~~
 git pull origin main
 ```
 
-### 2. 로컬
+### 2. npm 설치 및 package.json 파일 수정
 
+'''
+npm install
+'''
+
+명령어를 통해 필요한 모듈들을 설치합니다.
+
+그런다음 package.json 파일을 열어 homepage 속성의 값을 자신의 페이지 주소로 바꿔줍니다.
+
+<img src="https://user-images.githubusercontent.com/59780565/137336163-0b507d3e-eb0f-477c-92ce-2fb591b73ab1.png" />
+
+### 3. 배포
+
+```
+npm run deploy
+```
+
+명령어를 통해 react project를 바로 배포가 가능합니다.
+
+자신의 저장소에 gh-pages 라는 브랜치가 자동으로 생성되며 페이지에서 보여줄 브랜치가 gh-pages로 설정됩니다.
+
+<img src="https://user-images.githubusercontent.com/59780565/137336885-7957e16f-4c46-4170-b080-cd865b1aef70.png" />
