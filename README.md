@@ -1,10 +1,10 @@
 # Simple React Resume Teaplate
 
-심플한 디자인의 리액트 이력서 템플릿입니다.
+심플한 디자인의 React 이력서 템플릿입니다.
 
-필요한 기능들을 모두 갖고 있는 템플릿을 찾기 힘들어, 다른 선배님들의 멋진 템플릿을 참고하여 직접 제작하였습니다.
+필요한 기능들을 모두 가진 템플릿을 찾기 힘들어, 다른 선배님들의 멋진 템플릿을 참고하여 직접 제작하였습니다.
 
-리액트를 통해 제작되었기 때문에, Node.js의 설치를 필수로 합니다.
+React를 통해 제작되었기 때문에, Node.js의 설치를 필수로 합니다.
 
 https://lee-minhoon.github.io/
 
@@ -18,7 +18,7 @@ https://lee-minhoon.github.io/
 
 ### PDF Viewer
 
-이미지외에도 다양한 문서들을 pdf 형식으로 변환해 제공할 수 있습니다. 
+이미지 외에도 다양한 문서들을 필요에 따라 PDF 형식으로 변환해 제공할 수 있습니다. 
 
 <hr/>
 
@@ -32,7 +32,7 @@ Use this template 버튼을 통해 템플릿을 자신의 원격 저장소로 �
 
 이때 페이지의 주소는 username.github.io/repository 가 됩니다.
 
-username.github.io/ 를 페이지 주소로 사용하려면 저장소 이름을 username.github.io 로 만들면 됩니다.
+username.github.io/를 페이지 주소로 사용하려면 저장소 이름을 username.github.io로 만들면 됩니다.
 
 원격 저장소가 만들어졌으면 아래 명령어를 통해 로컬로 이력서를 가져옵니다.
 
@@ -50,7 +50,7 @@ npm install
 
 명령어를 통해 필요한 모듈들을 설치합니다.
 
-그런다음 package.json 파일을 열어 homepage 속성의 값을 자신의 페이지 주소로 바꿔줍니다.
+그런 다음 package.json 파일을 열어 homepage 속성의 값을 자신의 페이지 주소로 바꿔줍니다.
 
 <img src="https://user-images.githubusercontent.com/59780565/137336163-0b507d3e-eb0f-477c-92ce-2fb591b73ab1.png" />
 
