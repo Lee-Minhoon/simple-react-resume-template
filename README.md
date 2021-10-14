@@ -16,5 +16,22 @@
 
 ## 사용 방법
 
+### 1. 템플릿 가져오기
 <img src="https://user-images.githubusercontent.com/59780565/137311464-bb3a3835-69c0-4666-afb0-0af96e7c6ce2.png" />
+
+Use this template 버튼을 통해 템플릿을 자신의 원격 저장소로 복사합니다.
+
+이때 페이지의 이름은 username.github.io/repository 가 되고, 루트 디렉터리또한 동일합니다.
+
+username.github.io/ 주소자체를 루트 디렉터리로 사용하려면 저장소 이름을 username.github.io 로 만들면 됩니다.
+
+원격 저장소가 만들어졌으면 아래 명령어를 통해 로컬로 이력서를 가져옵니다.
+
+```
+git init
+git remote add origin ~~
+git pull origin main
+```
+
+### 2. 로컬
 
