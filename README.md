@@ -6,6 +6,8 @@
 
 https://lee-minhoon.github.io/
 
+<hr/>
+
 ## 주요 기능
 
 ### Image Modal
@@ -15,6 +17,8 @@ https://lee-minhoon.github.io/
 ### PDF Viewer
 
 이미지외에도 다양한 문서들을 pdf 형식으로 변환해 제공할 수 있습니다. 
+
+<hr/>
 
 ## 설치 방법
 
@@ -67,6 +71,8 @@ npm run start
 ```
 
 명령어만 입력해주시면 테스트용 서버가 실행됩니다.
+
+<hr/>
 
 ## 사용 방법
 
