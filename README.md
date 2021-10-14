@@ -1,23 +1,23 @@
 # Simple React Resume Teaplate
+
 심플한 디자인의 리액트 이력서 템플릿입니다.
-
-
-
-
-
-
 
 필요한 기능들을 모두 갖고 있는 템플릿을 찾기 힘들어, 다른 선배님들의 멋진 템플릿을 참고하여 직접 제작하였습니다.
 
 ## 주요 기능
+
 ### Image Modal
+
 프로젝트나 이력 등에 관한 대표 이미지들을 보여줄 수 있고, 클릭 시 모달 창을 통해 확대하여 볼 수 있습니다.
+
 ### PDF Viewer
+
 이미지외에도 다양한 문서들을 pdf 형식으로 변환해 제공할 수 있습니다. 
 
-## 사용 방법
+## 설치 방법
 
 ### 1. 템플릿 가져오기
+
 <img src="https://user-images.githubusercontent.com/59780565/137311464-bb3a3835-69c0-4666-afb0-0af96e7c6ce2.png" />
 
 Use this template 버튼을 통해 템플릿을 자신의 원격 저장소로 복사합니다.
@@ -57,3 +57,39 @@ npm run deploy
 자신의 저장소에 gh-pages 라는 브랜치가 자동으로 생성되며 페이지에서 보여줄 브랜치가 gh-pages로 설정됩니다.
 
 <img src="https://user-images.githubusercontent.com/59780565/137336885-7957e16f-4c46-4170-b080-cd865b1aef70.png" />
+
+로컬에서 테스트를 원하실 경우
+
+```
+npm run start
+```
+
+명령어만 입력해주시면 테스트용 서버가 실행됩니다.
+
+## 사용 방법
+
+### 1. 프로필
+
+프로필은 프로젝트 폴더 → public 폴더안의 profile.jpg 파일을 지우고 원하는 사진을 넣어 profile.jpg 로 이름을 변경해주시면 됩니다.
+
+### 2. 내용
+
+프로젝트 폴더 → src → resume.js 파일에 이력서의 내용들이 작성되어 있습니다.
+
+샘플이 작성되어 있기 때문에, 배포된 페이지와 비교하여 작성하면 좀 더 수월합니다.
+
+desc 키에 main, sub 두가지의 키가 있는데,
+
+sub 키에 값을 입력하게 되면 해당 부분은 아래 그림처럼 접고 펼칠 수 있는 글이 됩니다.
+
+<img src="https://user-images.githubusercontent.com/59780565/137338919-88cd4d6b-8cbb-422b-8f79-5eb89ade2510.png" />
+
+### 3. 이미지 및 DPF
+
+이미지와 PDF는 프로젝트 폴더 → public → projects 안에 폴더를 하나 만들어 넣어주시면 됩니다.
+
+folder 키의 값에 방금 만든 폴더명을 넣어주시면 됩니다.
+
+images 키에는 image 파일들의 이름을 넣어주시면 되고,
+
+pdfs 키에는 pdf 파일들의 이름과 pdf 미리보기 파일을 넣어주시면 됩니다.
