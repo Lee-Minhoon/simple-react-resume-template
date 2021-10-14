@@ -66,7 +66,9 @@ npm run deploy
 
 <img src="https://user-images.githubusercontent.com/59780565/137336885-7957e16f-4c46-4170-b080-cd865b1aef70.png" />
 
-React 프로젝트를 Github Page 에 배포하거나 gh-pages에 대해 궁금하신 분들은 https://hackids.tistory.com/126 를 확인해주시면 됩니다.
+React 프로젝트를 Github Page 에 배포하거나 gh-pages에 대해 궁금하신 분들은
+
+https://hackids.tistory.com/126 를 확인해주시면 됩니다.
 
 로컬에서 테스트를 원하실 경우
 
