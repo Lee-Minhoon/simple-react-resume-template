@@ -4,6 +4,8 @@
 
 필요한 기능들을 모두 갖고 있는 템플릿을 찾기 힘들어, 다른 선배님들의 멋진 템플릿을 참고하여 직접 제작하였습니다.
 
+<a href="https://lee-minhoon.github.io/">https://lee-minhoon.github.io/</a>
+
 ## 주요 기능
 
 ### Image Modal
