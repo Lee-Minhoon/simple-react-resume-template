@@ -7,7 +7,7 @@ class Left extends Component {
         const content = this.props.content;
 
         return (
-            <div className={styles.Left}>
+            <div className={styles.Left} style={{ lineHeight: 0 }}>
                 <img className={intro.profile} src={content.profile} alt='alt_profile'></img>
             </div>
         );
