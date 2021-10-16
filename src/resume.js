@@ -11,6 +11,9 @@ export const intro = {
     profile: "profile.png",
     intro: `
     안녕하세요! 개발자 홍길동입니다.
+
+    
+    만나서 반갑습니다.
     `
 };
 
