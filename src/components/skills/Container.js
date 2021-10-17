@@ -7,12 +7,11 @@ class Container extends Component {
     render() {
         const subject = this.props.contents.subject;
         const contents = this.props.contents.contents;
-        const wrapper = contents.map((content, index) => (<Wrapper key={index} content={content}></Wrapper>))
 
         return (
-            <div className={styles.Container}>
+            <div className={styles.Container} >
                 <Subject subject={subject}></Subject>
-                {wrapper}
+                <Wrapper contents={contents}></Wrapper>
             </div>
         );
     }

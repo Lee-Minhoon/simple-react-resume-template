@@ -6,7 +6,7 @@ class PDFViewer extends Component {
 
         return (
             <div>
-                <embed src={pdf} type="application/pdf"></embed>
+                <embed src={pdf} type="application/pdf" />
             </div>
         );
     }

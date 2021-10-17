@@ -4,7 +4,7 @@ $ratio: 1.2;
 
 @mixin event($x, $y) {
     &:hover {
-        color: #FFC745;
+        color: $modal-highlight;
         cursor: pointer;
         transform: translate($x, $y) scale(1.2);
     }
@@ -24,10 +24,10 @@ svg {
     @include flex-center();
     @include location(0, 0, 0, 0);
     background-color: rgba(0, 0, 0, 0.5);
-    color: white;
+    color: $white;
     section {
         @include media-size(90vw, 75vw, 1.618);
-        background-color: #333;
+        background-color: $darkgray;
         header {
             position: relative;
             @include flex-center();
@@ -64,12 +64,12 @@ svg {
                 transition: 0.3s;
                 &:hover {
                     cursor: pointer;
-                    box-shadow: 0 1px 3px 1px gray;
+                    box-shadow: 0 1px 3px 1px $gray;
                     transform: scale(1.05);
                 }
             }
             .current {
-                border: 0.16vw solid #FFC745;
+                border: 0.16vw solid $modal-highlight;
                 transform: scale(1.05);
             }
         }

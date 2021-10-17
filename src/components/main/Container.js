@@ -7,7 +7,7 @@ class Container extends Component {
     render() {
         const subject = this.props.contents.subject;
         const contents = this.props.contents.contents;
-        const wrapper = contents.map((content, index) => (<Wrapper key={index} content={content}></Wrapper>))
+        const wrapper = contents.map((content, index) => (<Wrapper key={index} content={content} />))
 
         return (
             <div className={styles.Container}>

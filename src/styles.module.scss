@@ -1,13 +1,13 @@
 @import './mixin.module.scss';
 
 .Resume {
-    @include media-width(90%, 1200px);
+    @include media-width(90%, 1116px);
     margin: 0px auto;
     padding: 60px 0 20px 0;
     line-height: 2;
     .Container {
         .Subject {
-            border-bottom: 1px solid #CCCCCC;
+            border-bottom: 2px solid $silver;
             margin-bottom: 2rem;
         }
         .Wrapper {
@@ -18,7 +18,7 @@
             }
             margin-bottom: 2rem;
             .Left {
-                @include media-width(100%, 30%);
+                @include media-width(100%, 28%);
                 @include media-text-align;
                 @include if-mobile {
                     padding-right: 0;
@@ -26,7 +26,7 @@
                 padding-right: 5%;
             }
             .Right {
-                @include media-width(100%, 70%);
+                @include media-width(100%, 72%);
                 .desc {
                     @include if-mobile {
                         margin-top: 1rem;
@@ -42,7 +42,7 @@
                             details {
                                 margin-left: -15px;
                                 summary:hover {
-                                    @include font(black, normal, 400, 1.5rem);
+                                    @include font($black, normal, 400, 1.5rem);
                                     cursor: pointer;
                                 }
                             }
@@ -53,15 +53,15 @@
                     @include media-content-align;
                     span {
                         display: inline-block;
-                        background-color: rgb(239, 239, 239);
+                        background-color: $smoke;
                         @include if-mobile {
                             margin: 0.5rem;
                         }
                         margin: 0.5rem 1rem 0.5rem 0;
                         padding: 1px 6px;
                         line-height: normal;
-                        @include font(#333, normal, 300, 1.5rem);
-                        box-shadow: 0 1px 3px 0 gray;
+                        @include font($darkgray, normal, 300, 1.5rem);
+                        box-shadow: 0 1px 3px 0 $gray;
                     }
                 }
                 .images, .pdfs {
@@ -76,11 +76,11 @@
                             margin: 0.5rem;
                         }
                         margin: 0.5rem 1rem 0.5rem 0;
-                        box-shadow: 0 1px 3px 1px gray;
+                        box-shadow: 0 1px 3px 1px $gray;
                         transition: 0.3s;
                         &:hover {
                             cursor: pointer;
-                            box-shadow: 0 2px 5px 2px gray;
+                            box-shadow: 0 2px 5px 2px $gray;
                             transform: scale(1.05);
                         }
                     }

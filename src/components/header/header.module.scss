@@ -18,10 +18,10 @@
     a {
         position: relative;
         display: inline-block;
-        @include size(5.5rem, 5.5rem);
+        @include size(5rem, 5rem);
         margin-left: 1rem;
         text-align: center;
-        color: #fff;
+        color: $white;
         transition: color 0.3s;
         &::before {
             content: '';
@@ -31,15 +31,15 @@
             @include location(0, 0, 0, 0);
             @include size(inherit, inherit);
             border-radius: 50%;
-            box-shadow: inset 0 0 0 30px #333;
+            box-shadow: inset 0 0 0 30px $darkgray;
             transition: box-shadow 0.3s;
         }
         &:hover {
-            color: #333;
+            color: $darkgray;
             &::before {
-                border: solid 2px white;
-                border-top: solid 2px #333;
-                box-shadow: inset 0 0 0 2px #333;
+                border: solid 2px $white;
+                border-top: solid 2px $darkgray;
+                box-shadow: inset 0 0 0 2px $darkgray;
                 animation: {
                     name: spin;
                     duration: 1s;
@@ -49,7 +49,7 @@
             }
         }
         i {
-            line-height: 5.5rem;
+            line-height: 5rem;
             font-size: 3rem;
         }
     }

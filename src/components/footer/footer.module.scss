@@ -5,7 +5,7 @@
     text-align: center;
     a {
         text-decoration: none;
-        @include font(#007bff, normal, 300, 1.5rem);
+        @include font($footer-link, normal, 300, 1.5rem);
         &:hover {
             text-decoration: underline;
         }

@@ -1,3 +1,12 @@
+$black: #000;
+$darkgray: #333;
+$gray: #808080;
+$silver: #CCC;
+$smoke: #f0f0f0;
+$white: #fff;
+$modal-highlight: #FFC745;
+$footer-link: #007bff;
+
 @mixin location($top, $right, $bottom, $left) {
     top: $top;
     right: $right;
