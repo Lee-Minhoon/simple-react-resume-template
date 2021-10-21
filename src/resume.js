@@ -22,15 +22,28 @@ export const skills = {
     contents: [
         {
             category: "Frontend",
-            desc: ["HTML"]
+            desc: [
+                { name: "React", proficiency: 25 },
+                { name: "HTML", proficiency: 50 },
+                { name: "CSS", proficiency: 45 },
+                { name: "JavaScript", proficiency: 30 }
+            ]
         },
         {
             category: "Backend",
-            desc: ["PHP"]
+            desc: [
+                { name: "Nodejs", proficiency: 20 },
+                { name: "PHP", proficiency: 40 },
+                { name: "C++", proficiency: 45 },
+                { name: "JAVA", proficiency: 30 },
+                { name: "Python", proficiency: 50 }
+            ]
         },
         {
             category: "DevOps",
-            desc: ["MySQL"]
+            desc: [
+                { name: "MySQL", proficiency: 40 }
+            ]
         },
     ],
 };
