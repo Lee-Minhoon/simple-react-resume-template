@@ -6,7 +6,7 @@
 
 React를 통해 개발했기 때문에, Node.js의 설치를 필수로 합니다.
 
-https://lee-minhoon.github.io/
+https://lee-minhoon.github.io/ < 해당 템플릿으로 만들어진 이력서입니다.
 
 <hr/>
 
