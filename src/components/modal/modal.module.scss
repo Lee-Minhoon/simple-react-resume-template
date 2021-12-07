@@ -10,6 +10,15 @@ $ratio: 1.2;
     }
 }
 
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 svg {
     position: absolute;
     z-index: 99;
@@ -28,6 +37,11 @@ svg {
     section {
         @include media-size(90vw, 75vw, 1.618);
         background-color: $darkgray;
+        animation: {
+            name: fade;
+            duration: 0.3s;
+            timing-function: linear;
+        }
         header {
             position: relative;
             @include flex-center();
